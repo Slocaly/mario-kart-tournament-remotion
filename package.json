@@ -3,8 +3,9 @@
 	"version": "1.0.0",
 	"description": "My Remotion video",
 	"scripts": {
+		"preinstall": "npx only-allow pnpm",
 		"start": "remotion preview",
-		"build": "remotion render SensCritique out/senscritique.mp4",
+		"build": "remotion render Versus out/versus.mp4",
 		"build-one-thread": "remotion render MarioKart out/marioKart.mp4 --concurrency=1",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
@@ -13,6 +14,7 @@
 	"license": "UNLICENSED",
 	"devDependencies": {
 		"@remotion/eslint-config": "^3.0.0",
+		"@remotion/google-fonts": "^3.3.60",
 		"@types/react": "^18.0.26",
 		"@types/web": "^0.0.86",
 		"eslint": "^8.30.0",
