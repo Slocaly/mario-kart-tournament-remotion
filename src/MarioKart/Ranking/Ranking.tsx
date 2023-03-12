@@ -1,6 +1,5 @@
 import {FC} from 'react';
 import {AbsoluteFill, Img} from 'remotion';
-import Mario from '../../../public/mario.jpeg';
 import {RankingTable} from './RankingTable';
 
 export const Ranking: FC = () => {
@@ -8,11 +7,10 @@ export const Ranking: FC = () => {
 		<>
 			<AbsoluteFill>
 				<Img
-					src={Mario}
+					src="https://i.pinimg.com/originals/d8/e7/e7/d8e7e7c2dac347163cd04af4e7db56a5.png"
 					style={{
 						objectFit: 'cover',
-						filter: 'blur(5px)',
-						scale: '1.1',
+						transform: 'scale(1.6)',
 						height: '100%',
 					}}
 				/>

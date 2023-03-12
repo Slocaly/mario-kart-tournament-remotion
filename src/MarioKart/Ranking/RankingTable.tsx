@@ -1,11 +1,17 @@
-import {CSSProperties, FC, Fragment, useState} from 'react';
-import firstRound from '../data/round0.json';
-import secondRound from '../data/round1.json';
-import {Flipper, Flipped} from 'react-flip-toolkit';
-import {useCurrentFrame} from 'remotion';
+import {CSSProperties, FC, Fragment, useMemo} from 'react';
+import firstRound from '../data/round1.json';
+import secondRound from '../data/round2.json';
 import * as VT323 from '@remotion/google-fonts/VT323';
+import {RankingLineFace} from './RankingLineFace';
 
 const {fontFamily} = VT323.loadFont('normal');
+
+export type Person = {
+	name: string;
+	head: string;
+	win: string;
+	loses: string;
+};
 
 const middleSeparation: CSSProperties = {
 	width: '100%',
@@ -15,69 +21,63 @@ const middleSeparation: CSSProperties = {
 };
 
 const line: CSSProperties = {
-	backgroundColor: 'rgba(75,75,75, 0.4)',
+	backgroundColor: 'rgba(25,25,25, 0.4)',
 	color: 'white',
+	marginBottom: '3px',
+	padding: '2px',
+	position: 'relative',
+};
+
+const list: CSSProperties = {
+	width: '90%',
+	padding: '0',
+	margin: 'auto',
+	marginTop: '15px',
+	fontFamily: `${fontFamily}`,
+	fontSize: '1.5rem',
+	listStyle: 'none',
 };
 
 export const RankingTable: FC = () => {
-	const [data, setData] = useState(firstRound);
-	const [hasChanged, setHasChanged] = useState(false);
-	const frame = useCurrentFrame();
+	const sortedFirstRound = useMemo(
+		() => firstRound.sort((a, b) => parseInt(b.win, 10) - parseInt(a.win, 10)),
+		[]
+	);
 
-	if (frame === 30 && !hasChanged) {
-		secondRound.sort((a, b) => parseInt(b.win, 10) - parseInt(a.win, 10));
-		setData(secondRound);
-		setHasChanged(true);
-	}
+	const getRankingIcon = (player: Person, index: number): string => {
+		const precedentPlayerIndex = sortedFirstRound.findIndex(
+			(firstPlayer) => firstPlayer.name === player.name
+		);
 
-	// If (frame === 119 && hasChanged) {
-	// 	setData(firstRound);
-	// 	setHasChanged(false);
-	// }
+		if (index === precedentPlayerIndex) return 'dash.png';
+		if (index > precedentPlayerIndex) return 'down.png';
+		return 'up.png';
+	};
+
+	const sortedSecondRound = useMemo(() => {
+		const sortedArray = secondRound.sort(
+			(a, b) => parseInt(b.win, 10) - parseInt(a.win, 10)
+		);
+
+		return sortedArray.map((player, index) => ({
+			...player,
+			arrow: getRankingIcon(player, index),
+		}));
+	}, []);
 
 	return (
-		<Flipper
-			flipKey={data.map((elem) => elem.name).join('')}
-			spring={{stiffness: 75, damping: 15}}
-		>
-			<table
-				style={{
-					width: '80%',
-					margin: 'auto',
-					marginTop: '2rem',
-					fontFamily: `${fontFamily}`,
-					fontSize: '1.1rem',
-					color: 'white',
-				}}
-			>
-				<thead>
-					<tr>
-						<th>Nom</th>
-						<th>Victoire</th>
-						<th>Défaite</th>
-					</tr>
-				</thead>
-				<tbody>
-					{data.map((person, index) => (
-						<Fragment key={person.name}>
-							<Flipped flipId={person.name}>
-								<tr style={line}>
-									<td>{person.name}</td>
-									<td style={{textAlign: 'center'}}>{person.win}</td>
-									<td style={{textAlign: 'center'}}>{person.loses}</td>
-								</tr>
-							</Flipped>
-							{index + 1 === Math.round(data.length / 2) && (
-								<tr>
-									<td colSpan={3}>
-										<hr style={middleSeparation} />
-									</td>
-								</tr>
-							)}
-						</Fragment>
-					))}
-				</tbody>
-			</table>
-		</Flipper>
+		<ul style={list}>
+			{sortedFirstRound.map((person, index) => (
+				<Fragment key={person.name}>
+					<li style={line}>
+						<RankingLineFace isFront index={index} person={person} />
+						<RankingLineFace index={index} person={sortedSecondRound[index]} />
+					</li>
+					{index + 1 === Math.round(sortedFirstRound.length / 2) && (
+						<hr style={middleSeparation} />
+					)}
+				</Fragment>
+			))}
+		</ul>
 	);
 };
