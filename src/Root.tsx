@@ -28,7 +28,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="MarioKart"
         width={500}
-        height={500}
+        height={1020}
         fps={30}
         durationInFrames={120}
         component={Ranking}
