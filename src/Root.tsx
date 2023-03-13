@@ -15,6 +15,9 @@ export const RemotionRoot: React.FC = () => {
 				fps={30}
 				durationInFrames={120}
 				component={Rounds}
+				defaultProps={{
+					round: 0
+				}}
 			/>
 			<Composition
 				id="Versus"

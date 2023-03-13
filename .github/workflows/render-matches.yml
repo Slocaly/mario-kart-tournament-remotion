@@ -1,18 +1,14 @@
-name: Render video
+name: Render Matches Video 🆚
 on:
   workflow_dispatch:
     inputs:
-      titleText:
-        description: "Which text should it say?"
+      round:
+        description: "For which round ? (0 to 4)"
         required: true
-        default: "Welcome to Remotion"
-      titleColor:
-        description: "Which color should it be in?"
-        required: true
-        default: "black"
+        default: 0
 jobs:
   render:
-    name: Render video
+    name: 📹 Render Matches
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
@@ -23,8 +19,8 @@ jobs:
       - run: echo $WORKFLOW_INPUT > input-props.json
         env:
           WORKFLOW_INPUT: ${{ toJson(github.event.inputs) }}
-      - run: npm run build -- --props="./input-props.json"
+      - run: npm run build:matches --props="./input-props.json"
       - uses: actions/upload-artifact@v2
         with:
-          name: out.mp4
-          path: out/video.mp4
+          name: matches.mp4
+          path: out/matches.mp4
