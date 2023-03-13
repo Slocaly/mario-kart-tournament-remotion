@@ -1,14 +1,14 @@
 {
-	"name": "SensCritique",
+	"name": "Mario Kart Videos",
 	"version": "1.0.0",
-	"description": "My Remotion video",
+	"description": "Generate video for the Zenika Mario Kart Tournament",
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
 		"start": "remotion preview",
 		"build": "remotion render",
 		"build:versus": "remotion render Versus out/versus.mp4",
 		"build:ranking": "remotion render Ranking out/ranking.mp4",
-		"build:matches": "remotion render Matches out/matches.mp4",
+		"build:matches": "remotion render Matches out/matches.mp4 --props=./input-props.json",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},
