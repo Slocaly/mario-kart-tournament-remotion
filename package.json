@@ -5,8 +5,10 @@
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
 		"start": "remotion preview",
-		"build": "remotion render Versus out/versus.mp4",
-		"build-one-thread": "remotion render MarioKart out/marioKart.mp4 --concurrency=1",
+		"build": "remotion render",
+		"build:versus": "remotion render Versus out/versus.mp4",
+		"build:ranking": "remotion render Ranking out/ranking.mp4",
+		"build:matches": "remotion render Matches out/matches.mp4",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},
