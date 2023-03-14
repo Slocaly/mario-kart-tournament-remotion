@@ -1,0 +1,83 @@
+name: Render Versus Video 🥊
+on:
+  workflow_dispatch:
+    inputs:
+      playerOne:
+        type: choice
+        description: "Player One (on the left)"
+        required: true
+        options:
+          - AnthonyDonnet
+          - AnthonyMarquet
+          - AudreyGentili
+          - BaptisteGauduchon
+          - ClemencePiteau
+          - EmericBoyadjian
+          - EtienneIdoux
+          - GeoffroyBegouaussel
+          - IlyesSemlali
+          - JeremiePicard
+          - LoicDuchet
+          - LucasAudart
+          - Maria-ElizaPaez
+          - MarwaBenali
+          - MathieuMure
+          - MathildeEscoffier
+          - MickaelAlves
+          - MoustaphaAgack
+          - NirinaRabeson
+          - OlivierPerez
+          - PierreReynaud
+          - QuentinFougeron
+          - SolèneLassiaille
+          - ThomasJouannot
+      playerTwo:
+        type: choice
+        description: "Player Two (on the right)"
+        required: true
+        options:
+          - AnthonyDonnet
+          - AnthonyMarquet
+          - AudreyGentili
+          - BaptisteGauduchon
+          - ClemencePiteau
+          - EmericBoyadjian
+          - EtienneIdoux
+          - GeoffroyBegouaussel
+          - IlyesSemlali
+          - JeremiePicard
+          - LoicDuchet
+          - LucasAudart
+          - Maria-ElizaPaez
+          - MarwaBenali
+          - MathieuMure
+          - MathildeEscoffier
+          - MickaelAlves
+          - MoustaphaAgack
+          - NirinaRabeson
+          - OlivierPerez
+          - PierreReynaud
+          - QuentinFougeron
+          - SolèneLassiaille
+          - ThomasJouannot
+jobs:
+  render:
+    name: 📹 Render Versus
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/setup-node@main
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
+      - run: sudo apt update
+      - run: sudo apt install ffmpeg
+      - run: pnpm i
+      - run: echo $WORKFLOW_INPUT > input-props.json
+        env:
+          WORKFLOW_INPUT: ${{ toJson(github.event.inputs) }}
+      - run: pnpm build:versus
+      - uses: actions/upload-artifact@v2
+        with:
+          name: versus.mp4
+          path: out/versus.mp4

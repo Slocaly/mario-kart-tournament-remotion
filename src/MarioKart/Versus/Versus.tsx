@@ -1,9 +1,16 @@
 import { AbsoluteFill, Img, Sequence } from "remotion";
 import { Player, PlayerPosition } from "./Player";
-import { AnthonyDonnet, LucasAudart, OlivierPerez } from "../../../utils/people";
+import People from "../../../utils/people";
 import { VSLogo } from "./VSLogo";
 
-export const Versus = () => {
+interface VersusProps {
+  playerOne: string;
+  playerTwo: string;
+}
+
+export const Versus = ({ playerOne, playerTwo }: VersusProps) => {
+
+  const getImageFor = (name: string) => People.find((imageUrl) => imageUrl.includes(name));
 
   return (
     <>
@@ -19,8 +26,16 @@ export const Versus = () => {
       </AbsoluteFill>
 
       <Sequence name="Players">
-        <Player src={OlivierPerez} nom="Olivier Perez" position={PlayerPosition.LEFT} />
-        <Player src={LucasAudart} nom="Lucas Audart" position={PlayerPosition.RIGHT} />
+        <Player
+          src={getImageFor(playerOne)}
+          nom={playerOne.split(/(?=[A-Z])/).join(" ")}
+          position={PlayerPosition.LEFT}
+        />
+        <Player
+          src={getImageFor(playerTwo)}
+          nom={playerTwo.split(/(?=[A-Z])/).join(" ")}
+          position={PlayerPosition.RIGHT}
+        />
       </Sequence>
 
       <Sequence from={25}>
