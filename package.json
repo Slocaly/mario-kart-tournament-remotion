@@ -10,6 +10,7 @@
 		"build:ranking": "remotion render Ranking out/ranking.mp4",
 		"build:matches": "remotion render Matches out/matches.mp4 --props=./input-props.json",
 		"build:endRound": "remotion render EndRound out/endRound.mp4",
+		"build:tournament": "remotion render Tournament out/tournament.mp4",
 		"still:result": "remotion still --frame=100 EndRound out/result.png",
 		"still:ranking": "remotion still --frame=400 EndRound out/ranking.png",
 		"still:matches": "remotion still --frame=650 EndRound out/matches.png",
