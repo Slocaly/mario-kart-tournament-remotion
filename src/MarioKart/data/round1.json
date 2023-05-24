@@ -3,144 +3,168 @@
 		"name": "Olivier Perez",
 		"head": "olivier.png",
 		"win": "1",
-		"loses": "0"
+		"loses": "0",
+		"score": "57"
 	},
 	{
 		"name": "Etienne Idoux",
 		"head": "etienne.png",
-		"win": "0",
-		"loses": "1"
+		"win": "1",
+		"loses": "0",
+		"score": "60"
 	},
 	{
 		"name": "Anthony Donnet",
 		"head": "anthonyD.png",
 		"win": "1",
-		"loses": "0"
+		"loses": "0",
+		"score": "0"
 	},
 	{
 		"name": "Anthony Marquet",
 		"head": "anthonyM.png",
 		"win": "0",
-		"loses": "1"
+		"loses": "1",
+		"score": "51"
 	},
 	{
 		"name": "Mickael Alves",
 		"head": "micka.png",
-		"win": "1",
-		"loses": "0"
+		"win": "0",
+		"loses": "1",
+		"score": "48"
 	},
 	{
 		"name": "Clemence Piteau",
 		"head": "clemence.png",
 		"win": "0",
-		"loses": "1"
+		"loses": "1",
+		"score": "45"
 	},
 	{
 		"name": "Emeric Boyadjian",
 		"head": "emeric.png",
 		"win": "1",
-		"loses": "0"
+		"loses": "0",
+		"score": "57"
 	},
 	{
 		"name": "Baptiste Gauduchon",
 		"head": "baptiste.png",
 		"win": "0",
-		"loses": "1"
+		"loses": "1",
+		"score": "51"
 	},
 	{
 		"name": "Jérémie Picard",
 		"head": "jeremie.png",
 		"win": "1",
-		"loses": "0"
+		"loses": "0",
+		"score": "60"
 	},
 	{
 		"name": "Lucas Audart",
 		"head": "lucas.png",
-		"win": "0",
-		"loses": "1"
+		"win": "1",
+		"loses": "0",
+		"score": "57"
 	},
 	{
 		"name": "Moustapha Agack",
 		"head": "mouss.png",
 		"win": "1",
-		"loses": "0"
+		"loses": "0",
+		"score": "54"
 	},
 	{
 		"name": "Pierre Reynaud",
 		"head": "pierre.png",
-		"win": "0",
-		"loses": "1"
+		"win": "1",
+		"loses": "0",
+		"score": "60"
 	},
 	{
 		"name": "Solène Lassiaille",
 		"head": "solene.png",
-		"win": "1",
-		"loses": "0"
+		"win": "0",
+		"loses": "1",
+		"score": "0"
 	},
 	{
 		"name": "Thomas Jouannot",
 		"head": "thomas.png",
 		"win": "0",
-		"loses": "1"
+		"loses": "1",
+		"score": "54"
 	},
 	{
 		"name": "Quentin Fougeron",
 		"head": "quentin.png",
-		"win": "1",
-		"loses": "0"
+		"win": "0",
+		"loses": "1",
+		"score": "0"
 	},
 	{
 		"name": "Mathieu Mure",
 		"head": "mathieu.png",
-		"win": "0",
-		"loses": "1"
+		"win": "1",
+		"loses": "0",
+		"score": "60"
 	},
 	{
 		"name": "Mathilde Escoffier",
 		"head": "mathilde.png",
 		"win": "1",
-		"loses": "0"
+		"loses": "0",
+		"score": "0"
 	},
 	{
 		"name": "Loïc Duchet",
 		"head": "loic.png",
 		"win": "0",
-		"loses": "1"
+		"loses": "1",
+		"score": "51"
 	},
 	{
 		"name": "Nirina Rabeson",
 		"head": "nirina.png",
-		"win": "1",
-		"loses": "0"
+		"win": "0",
+		"loses": "1",
+		"score": "51"
 	},
 	{
 		"name": "Maria-Eliza Paez",
 		"head": "maria.png",
 		"win": "0",
-		"loses": "1"
+		"loses": "1",
+		"score": "39"
 	},
 	{
 		"name": "Geoffroy Begouaussel",
 		"head": "geoffroy.png",
-		"win": "1",
-		"loses": "0"
+		"win": "0",
+		"loses": "1",
+		"score": "48"
 	},
 	{
 		"name": "Audrey Gentili",
 		"head": "audrey.png",
-		"win": "0",
-		"loses": "1"
+		"win": "1",
+		"loses": "0",
+		"score": "57"
 	},
 	{
 		"name": "Marwa Benali",
 		"head": "marwa.png",
-		"win": "1",
-		"loses": "0"
+		"win": "0",
+		"loses": "1",
+		"score": "0"
 	},
 	{
 		"name": "Ilyes Semlali",
 		"head": "ilyes.png",
-		"win": "0",
-		"loses": "1"
+		"win": "1",
+		"loses": "0",
+		"score": "0"
 	}
 ]
