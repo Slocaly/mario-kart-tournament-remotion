@@ -15,12 +15,12 @@
 		"playerOne": {
 			"name": "Mathilde",
 			"photo": "mathilde.png",
-			"lose": null
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Pops",
 			"photo": "etienne.png",
-			"lose": null
+			"lose": false
 		}
 	},
 	{
@@ -51,12 +51,12 @@
 		"playerOne": {
 			"name": "Mouss",
 			"photo": "mouss.png",
-			"lose": null
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Mickaël",
 			"photo": "micka.png",
-			"lose": null
+			"lose": true
 		}
 	},
 	{
@@ -87,12 +87,12 @@
 		"playerOne": {
 			"name": "Quentin",
 			"photo": "quentin.png",
-			"lose": null
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Nirina",
 			"photo": "nirina.png",
-			"lose": null
+			"lose": false
 		}
 	},
 	{
