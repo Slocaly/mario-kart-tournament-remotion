@@ -17,7 +17,7 @@ type PlayerHeadProps = {
 export const PlayerHead: FC<PlayerHeadProps> = ({index, player, isFirst}) => {
 	const frame = useCurrentFrame();
 
-	const getTimeKey = (keyframe: number) => keyframe + index * 30;
+	const getTimeKey = (keyframe: number) => keyframe + index * 10;
 	const baseYPos = 300 + index * 280 - (isFirst ? 140 : 0);
 
 	const transformX = interpolate(
