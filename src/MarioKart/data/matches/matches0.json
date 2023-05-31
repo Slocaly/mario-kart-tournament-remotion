@@ -2,121 +2,145 @@
 	{
 		"playerOne": {
 			"name": "Audrey",
-			"photo": "audrey.png"
+			"photo": "audrey.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Loïc",
-			"photo": "loic.png"
+			"photo": "loic.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Lucas",
-			"photo": "lucas.png"
+			"photo": "lucas.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Anthony",
-			"photo": "anthonyM.png"
+			"photo": "anthonyM.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Moustapha",
-			"photo": "mouss.png"
+			"photo": "mouss.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Thomas",
-			"photo": "thomas.png"
+			"photo": "thomas.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Pierre",
-			"photo": "pierre.png"
+			"photo": "pierre.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Clémence",
-			"photo": "clemence.png"
+			"photo": "clemence.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Emeric",
-			"photo": "emeric.png"
+			"photo": "emeric.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Baptiste",
-			"photo": "baptiste.png"
+			"photo": "baptiste.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Pops",
-			"photo": "etienne.png"
+			"photo": "etienne.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Mickaël",
-			"photo": "micka.png"
+			"photo": "micka.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Anthony",
-			"photo": "anthonyD.png"
+			"photo": "anthonyD.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Solène",
-			"photo": "solene.png"
+			"photo": "solene.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Marwa",
-			"photo": "marwa.png"
+			"photo": "marwa.png",
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Mathilde",
-			"photo": "mathilde.png"
+			"photo": "mathilde.png",
+			"lose": false
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Jérémie",
-			"photo": "jeremie.png"
+			"photo": "jeremie.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Maria",
-			"photo": "maria.png"
+			"photo": "maria.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Olivier",
-			"photo": "olivier.png"
+			"photo": "olivier.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Nirina",
-			"photo": "nirina.png"
+			"photo": "nirina.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Mathieu",
-			"photo": "mathieu.png"
+			"photo": "mathieu.png",
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Geoffroy",
-			"photo": "geoffroy.png"
+			"photo": "geoffroy.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Quentin",
-			"photo": "quentin.png"
+			"photo": "quentin.png",
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Ilyes",
-			"photo": "ilyes.png"
+			"photo": "ilyes.png",
+			"lose": false
 		}
 	}
 ]

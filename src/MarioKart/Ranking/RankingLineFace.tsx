@@ -21,7 +21,7 @@ const score: CSSProperties = {
 	width: '9 ch',
 	borderLeft: 'solid 2px rgb(150, 150, 150, 0.5)',
 	padding: '0 1rem',
-  fontWeight: 'bold'
+	fontWeight: 'bold',
 };
 
 const front: CSSProperties = {
@@ -52,10 +52,14 @@ export const RankingLineFace: FC<RankingLineFaceProps> = ({
 
 	const delay = 4 * index;
 
-	const opacity = interpolate(frame, [0 + delay, 1 + delay], [0, 1]);
+	const opacity = interpolate(
+		frame,
+		[0 + 120 + delay, 1 + 120 + delay],
+		[0, 1]
+	);
 
 	const deg = spring({
-		frame: frame - delay,
+		frame: frame - 120 - delay,
 		fps,
 		from: 0,
 		to: 180,
@@ -122,6 +126,16 @@ export const RankingLineFace: FC<RankingLineFaceProps> = ({
 			<div style={score}>
 				<span style={{textAlign: 'center'}}>
 					{person.win} - {person.loses}
+				</span>
+				<span
+					style={{
+						paddingLeft: '1rem',
+						minWidth: '4ch',
+						textAlign: 'center',
+						display: 'inline-block',
+					}}
+				>
+					{person.score}
 				</span>
 			</div>
 		</div>

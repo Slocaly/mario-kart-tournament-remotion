@@ -1,112 +1,146 @@
 [
 	{
 		"playerOne": {
-			"name": "Lucas",
-			"photo": "lucas.png"
+			"name": "Audrey",
+			"photo": "audrey.png",
+			"lose": true
 		},
 		"playerTwo": {
-			"name": "Anthony",
-			"photo": "anthonyM.png"
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Moustapha",
-			"photo": "mouss.png"
-		},
-		"playerTwo": {
-			"name": "Thomas",
-			"photo": "thomas.png"
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Pierre",
-			"photo": "pierre.png"
-		},
-		"playerTwo": {
-			"name": "Clémence",
-			"photo": "clemence.png"
+			"name": "Pops",
+			"photo": "etienne.png",
+			"lose": false
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Emeric",
-			"photo": "emeric.png"
+			"photo": "emeric.png",
+			"lose": false
 		},
 		"playerTwo": {
-			"name": "Baptiste",
-			"photo": "baptiste.png"
+			"name": "Lucas",
+			"photo": "lucas.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
-			"name": "Pops",
-			"photo": "etienne.png"
-		},
-		"playerTwo": {
-			"name": "Mickaël",
-			"photo": "micka.png"
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Anthony",
-			"photo": "anthonyD.png"
-		},
-		"playerTwo": {
-			"name": "Solène",
-			"photo": "solene.png"
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Marwa",
-			"photo": "marwa.png"
-		},
-		"playerTwo": {
 			"name": "Mathilde",
-			"photo": "mathilde.png"
+			"photo": "mathilde.png",
+			"lose": true
+		},
+		"playerTwo": {
+			"name": "Mathieu",
+			"photo": "mathieu.png",
+			"lose": false
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Jérémie",
-			"photo": "jeremie.png"
+			"photo": "jeremie.png",
+			"lose": false
 		},
 		"playerTwo": {
-			"name": "Maria",
-			"photo": "maria.png"
+			"name": "Anthony",
+			"photo": "anthonyD.png",
+			"lose": true
 		}
 	},
 	{
 		"playerOne": {
+			"name": "Ilyes",
+			"photo": "ilyes.png",
+			"lose": true
+		},
+		"playerTwo": {
+			"name": "Moustapha",
+			"photo": "mouss.png",
+			"lose": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Pierre",
+			"photo": "pierre.png",
+			"lose": true
+		},
+		"playerTwo": {
 			"name": "Olivier",
-			"photo": "olivier.png"
-		},
-		"playerTwo": {
-			"name": "Nirina",
-			"photo": "nirina.png"
+			"photo": "olivier.png",
+			"lose": false
 		}
 	},
 	{
 		"playerOne": {
-			"name": "Mathieu",
-			"photo": "mathieu.png"
+			"name": "Mickael",
+			"photo": "micka.png",
+			"lose": false
 		},
 		"playerTwo": {
-			"name": "Geoffroy",
-			"photo": "geoffroy.png"
+			"name": "Solène",
+			"photo": "solene.png",
+			"lose": true
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Nirina",
+			"photo": "nirina.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Thomas",
+			"photo": "thomas.png",
+			"lose": true
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Loïc",
+			"photo": "loic.png",
+			"lose": true
+		},
+		"playerTwo": {
+			"name": "Baptiste",
+			"photo": "baptiste.png",
+			"lose": false
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Quentin",
-			"photo": "quentin.png"
+			"photo": "quentin.png",
+			"lose": false
 		},
 		"playerTwo": {
-			"name": "Ilyes",
-			"photo": "ilyes.png"
+			"name": "Clémence",
+			"photo": "clemence.png",
+			"lose": true
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Marwa",
+			"photo": "marwa.png",
+			"lose": true
+		},
+		"playerTwo": {
+			"name": "Anthony",
+			"photo": "anthonyM.png",
+			"lose": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Geoffroy",
+			"photo": "geoffroy.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Maria",
+			"photo": "maria.png",
+			"lose": true
 		}
 	}
 ]
