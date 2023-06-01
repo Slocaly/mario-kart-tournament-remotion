@@ -14,7 +14,11 @@ type PlayerHeadProps = {
 	isFirst?: boolean;
 };
 
-export const PlayerHead: FC<PlayerHeadProps> = ({index, player, isFirst}) => {
+export const PlayerHeadFixed: FC<PlayerHeadProps> = ({
+	index,
+	player,
+	isFirst,
+}) => {
 	const frame = useCurrentFrame();
 	const {fps} = useVideoConfig();
 
@@ -50,7 +54,7 @@ export const PlayerHead: FC<PlayerHeadProps> = ({index, player, isFirst}) => {
 		config: {
 			mass: 0.5,
 		},
-		from: -200,
+		from: -600,
 		to: 0,
 	});
 
@@ -61,15 +65,15 @@ export const PlayerHead: FC<PlayerHeadProps> = ({index, player, isFirst}) => {
 			mass: 0.5,
 		},
 		from: 0,
-		to: 200,
+		to: 600,
 	});
 
-	const transform = `translate(${entrance - exit})`;
+	const transform = `translate(${entrance - exit + 339}, 1450)`;
 
 	return (
 		<>
 			<path
-				d={`M40 ${baseYPos}h100v140H40`}
+				d="M40 160h100v140H40"
 				fill={`url(#${player.name}-pattern)`}
 				transform={transform}
 			/>
@@ -77,7 +81,7 @@ export const PlayerHead: FC<PlayerHeadProps> = ({index, player, isFirst}) => {
 				id={`${player.name}-pattern`}
 				patternUnits="userSpaceOnUse"
 				x="40"
-				y={baseYPos}
+				y="160"
 				width="100"
 				height="140"
 			>

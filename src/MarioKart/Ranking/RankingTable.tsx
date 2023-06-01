@@ -26,8 +26,8 @@ const middleSeparation: CSSProperties = {
 const line: CSSProperties = {
 	backgroundColor: 'rgba(25,25,25, 0.4)',
 	color: 'white',
-	marginBottom: '3px',
-	padding: '2px',
+	marginBottom: '6px',
+	padding: '4px',
 	position: 'relative',
 };
 
@@ -35,9 +35,9 @@ const list: CSSProperties = {
 	width: '90%',
 	padding: '0',
 	margin: 'auto',
-	marginTop: '15px',
+	marginTop: '30px',
 	fontFamily: `${fontFamily}`,
-	fontSize: '1.5rem',
+	fontSize: '3rem',
 	listStyle: 'none',
 };
 
@@ -84,14 +84,14 @@ export const RankingTable: FC = () => {
 				const springAnimAppear = spring({
 					frame: frame - index * 3,
 					fps,
-					from: 600,
+					from: 1100,
 					to: 0,
 				});
 				const springAnimDisappear = spring({
 					frame: frame - index * 2 - 300,
 					fps,
 					from: 0,
-					to: 600,
+					to: 1100,
 				});
 
 				return (

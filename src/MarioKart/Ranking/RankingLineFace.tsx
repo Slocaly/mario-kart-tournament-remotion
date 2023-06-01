@@ -83,19 +83,19 @@ export const RankingLineFace: FC<RankingLineFaceProps> = ({
 					style={{
 						display: 'inline-block',
 						width: '2ch',
-						paddingLeft: '0.5rem',
+						paddingLeft: '1rem',
 					}}
 				>
 					{(person as any).arrow && (
 						<Img
-							style={{width: '20px'}}
+							style={{width: '40px'}}
 							src={staticFile((person as any).arrow)}
 						/>
 					)}
 				</span>
-				<p
+				<p 
 					style={{
-						margin: '0 1rem',
+						margin: '0 2rem',
 						width: '2ch',
 						display: 'inline-block',
 						lineHeight: '2rem',
@@ -114,9 +114,9 @@ export const RankingLineFace: FC<RankingLineFaceProps> = ({
 				>
 					<Img
 						style={{
-							width: '25px',
-							maxHeight: '40px',
-							margin: '0 0.5rem 0 0',
+							width: '45px',
+							maxHeight: '70px',
+							margin: '0 1.5rem 0 0',
 						}}
 						src={staticFile(person.head)}
 					/>
@@ -130,7 +130,7 @@ export const RankingLineFace: FC<RankingLineFaceProps> = ({
 				<span
 					style={{
 						paddingLeft: '1rem',
-						minWidth: '4ch',
+						minWidth: '6ch',
 						textAlign: 'center',
 						display: 'inline-block',
 					}}

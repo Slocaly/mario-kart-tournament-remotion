@@ -4,6 +4,7 @@ import {Versus} from './MarioKart/Versus/Versus';
 import {Rounds} from './MarioKart/Rounds/Rounds';
 import {EndRound} from './MarioKart/EndRound/EndRound';
 import {Tournament} from './MarioKart/Tournament/Tournament';
+import {TournamentDown} from './MarioKart/Tournament/TournamentDown';
 
 // Each <Composition> is an entry in the sidebar!
 
@@ -43,10 +44,10 @@ export const RemotionRoot: React.FC = () => {
 			/>
 			<Composition
 				id="EndRound"
-				width={500}
-				height={1020}
+				width={1080}
+				height={1920}
 				fps={30}
-				durationInFrames={700}
+				durationInFrames={1000}
 				component={EndRound}
 			/>
 			<Composition
@@ -56,6 +57,14 @@ export const RemotionRoot: React.FC = () => {
 				fps={30}
 				durationInFrames={300}
 				component={Tournament}
+			/>
+			<Composition
+				width={1080}
+				height={1920}
+				id="TournamentDown"
+				fps={30}
+				durationInFrames={300}
+				component={TournamentDown}
 			/>
 		</>
 	);

@@ -1,11 +1,12 @@
 import {AbsoluteFill, Img} from 'remotion';
-import matches from '../data/tournament/matches1.json';
+import matches from '../data/tournament/matchesDown1.json';
 import {PlayerHead} from './PlayerHead';
-import {Strokes} from './Strokes';
 import {Fragment} from 'react';
 import {UnknownHead} from './UnknownHead';
+import {StrokesDown} from './StrokesDown';
+import { PlayerHeadFixed } from './PlayerHeadFixed';
 
-export const Tournament: React.FC = () => {
+export const TournamentDown: React.FC = () => {
 	return (
 		<>
 			<AbsoluteFill>
@@ -30,14 +31,23 @@ export const Tournament: React.FC = () => {
 					<UnknownHead yPos={780} xPos={342} />
 					<UnknownHead yPos={1050} xPos={342} />
 					<UnknownHead yPos={1350} xPos={342} />
-					<UnknownHead yPos={1600} xPos={342} />
-					<Strokes />
+					{/* <UnknownHead yPos={1600} xPos={342} /> */}
+					<StrokesDown />
 					{matches.map((match, index) => (
 						<Fragment key={match.playerOne.name}>
 							<PlayerHead isFirst index={index} player={match.playerOne} />
 							<PlayerHead index={index} player={match.playerTwo} />
 						</Fragment>
 					))}
+					<PlayerHeadFixed
+						isFirst
+						index={5}
+						player={{
+							name: 'Lucas',
+							photo: 'lucas.png',
+							win: false,
+						}}
+					/>
 				</svg>
 			</AbsoluteFill>
 		</>

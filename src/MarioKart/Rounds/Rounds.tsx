@@ -75,7 +75,7 @@ export const Rounds: React.FC<RoundsProps> = ({round, animateOut = false}) => {
 							width: '100%',
 							textAlign: 'center',
 							fontFamily,
-							fontSize: '4rem',
+							fontSize: '8rem',
 							margin: '1.5rem 0',
 						}}
 					>

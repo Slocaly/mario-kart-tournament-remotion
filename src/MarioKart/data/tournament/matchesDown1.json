@@ -1,0 +1,50 @@
+[
+	{
+		"playerOne": {
+			"name": "Audrey",
+			"photo": "audrey.png",
+			"win": true
+		},
+		"playerTwo": {
+			"name": "Loïc",
+			"photo": "loic.png",
+			"win": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Lucas",
+			"photo": "lucas.png",
+			"win": true
+		},
+		"playerTwo": {
+			"name": "Anthony",
+			"photo": "anthonyM.png",
+			"win": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Moustapha",
+			"photo": "mouss.png",
+			"win": false
+		},
+		"playerTwo": {
+			"name": "Thomas",
+			"photo": "thomas.png",
+			"win": true
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Pierre",
+			"photo": "pierre.png",
+			"win": true
+		},
+		"playerTwo": {
+			"name": "Clémence",
+			"photo": "clemence.png",
+			"win": false
+		}
+	}
+]

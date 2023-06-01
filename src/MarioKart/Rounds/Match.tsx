@@ -92,13 +92,13 @@ export const Match: React.FC<MatchProps> = ({
 			style={{
 				width: '90%',
 				backgroundColor: 'rgba(75,75,75, 0.5)',
-				fontSize: '2rem',
+				fontSize: '4rem',
 				color: 'white',
 				fontFamily,
 				display: 'flex',
 				justifyContent: 'space-around',
 				alignItems: 'center',
-				padding: '5px 40px 5px 20px',
+				padding: '10px 40px 10px 20px',
 				transform: `translateX(${springAnim}%)`,
 				clipPath: 'polygon(0 0, 100% 0%, 90% 100%, 0% 100%)',
 			}}
@@ -107,7 +107,7 @@ export const Match: React.FC<MatchProps> = ({
 				style={{
 					display: 'flex',
 					alignItems: 'center',
-					gap: '20px',
+					gap: '40px',
 				}}
 			>
 				{playerOne.name}
@@ -115,7 +115,7 @@ export const Match: React.FC<MatchProps> = ({
 					src={staticFile(playerOne.photo)}
 					alt="photo"
 					style={{
-						width: '40px',
+						width: '80px',
 						objectFit: 'contain',
 						opacity: playerOne.lose ? opacityOnLose : 1,
 						filter: `grayscale(${playerOne.lose ? grayscaleOnLose : 0})`,
@@ -128,20 +128,20 @@ export const Match: React.FC<MatchProps> = ({
 			<Img
 				src={staticFile('versus.png')}
 				alt="versus"
-				style={{width: '30px', objectFit: 'contain'}}
+				style={{width: '60px', objectFit: 'contain'}}
 			/>
 			<div
 				style={{
 					display: 'flex',
 					alignItems: 'center',
-					gap: '20px',
+					gap: '40px',
 				}}
 			>
 				<Img
 					src={staticFile(playerTwo.photo)}
 					alt="photo"
 					style={{
-						width: '40px',
+						width: '80px',
 						objectFit: 'contain',
 						opacity: playerTwo.lose ? opacityOnLose : 1,
 						filter: `grayscale(${playerTwo.lose ? grayscaleOnLose : 0})`,
