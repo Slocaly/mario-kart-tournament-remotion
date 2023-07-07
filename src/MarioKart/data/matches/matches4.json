@@ -63,12 +63,12 @@
 		"playerOne": {
 			"name": "Mathieu",
 			"photo": "mathieu.png",
-			"lose": null
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Baptiste",
 			"photo": "baptiste.png",
-			"lose": null
+			"lose": false
 		}
 	},
 	{
@@ -99,24 +99,24 @@
 		"playerOne": {
 			"name": "Ilyes",
 			"photo": "ilyes.png",
-			"lose": null
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Geoffroy",
 			"photo": "geoffroy.png",
-			"lose": null
+			"lose": false
 		}
 	},
 	{
 		"playerOne": {
 			"name": "Clémence",
 			"photo": "clemence.png",
-			"lose": null
+			"lose": false
 		},
 		"playerTwo": {
 			"name": "Anthony",
 			"photo": "anthonyD.png",
-			"lose": null
+			"lose": true
 		}
 	},
 	{
@@ -135,12 +135,12 @@
 		"playerOne": {
 			"name": "Marwa",
 			"photo": "marwa.png",
-			"lose": null
+			"lose": true
 		},
 		"playerTwo": {
 			"name": "Loïc",
 			"photo": "loic.png",
-			"lose": null
+			"lose": false
 		}
 	}
 ]

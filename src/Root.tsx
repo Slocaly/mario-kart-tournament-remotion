@@ -47,7 +47,7 @@ export const RemotionRoot: React.FC = () => {
 				width={1080}
 				height={1920}
 				fps={30}
-				durationInFrames={1000}
+				durationInFrames={920}
 				component={EndRound}
 			/>
 			<Composition

@@ -17,7 +17,7 @@
 		"name": "Anthony Donnet",
 		"head": "anthonyD.png",
 		"win": "1",
-		"loses": "3",
+		"loses": "4",
 		"score": "90"
 	},
 	{
@@ -37,7 +37,7 @@
 	{
 		"name": "Clemence Piteau",
 		"head": "clemence.png",
-		"win": "1",
+		"win": "2",
 		"loses": "3",
 		"score": "136"
 	},
@@ -51,9 +51,9 @@
 	{
 		"name": "Baptiste Gauduchon",
 		"head": "baptiste.png",
-		"win": "2",
+		"win": "3",
 		"loses": "2",
-		"score": "102"
+		"score": "156"
 	},
 	{
 		"name": "Jérémie Picard",
@@ -108,8 +108,8 @@
 		"name": "Mathieu Mure",
 		"head": "mathieu.png",
 		"win": "2",
-		"loses": "2",
-		"score": "222"
+		"loses": "3",
+		"score": "276"
 	},
 	{
 		"name": "Mathilde Escoffier",
@@ -122,7 +122,7 @@
 		"name": "Loïc Duchet",
 		"head": "loic.png",
 		"win": "0",
-		"loses": "4",
+		"loses": "5",
 		"score": "51"
 	},
 	{
@@ -135,14 +135,14 @@
 	{
 		"name": "Maria-Eliza Paez",
 		"head": "maria.png",
-		"win": "1",
+		"win": "2",
 		"loses": "3",
-		"score": "187"
+		"score": "244"
 	},
 	{
 		"name": "Geoffroy Begouaussel",
 		"head": "geoffroy.png",
-		"win": "1",
+		"win": "2",
 		"loses": "3",
 		"score": "213"
 	},
@@ -156,15 +156,15 @@
 	{
 		"name": "Marwa Benali",
 		"head": "marwa.png",
-		"win": "2",
-		"loses": "2",
+		"win": "0",
+		"loses": "5",
 		"score": "0"
 	},
 	{
 		"name": "Ilyes Semlali",
 		"head": "ilyes.png",
-		"win": "1",
-		"loses": "3",
+		"win": "0",
+		"loses": "5",
 		"score": "0"
 	}
 ]

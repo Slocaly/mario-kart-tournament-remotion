@@ -14,6 +14,8 @@
 		"still:result": "remotion still --frame=100 EndRound out/result.png",
 		"still:ranking": "remotion still --frame=400 EndRound out/ranking.png",
 		"still:matches": "remotion still --frame=650 EndRound out/matches.png",
+		"still:firstTournament": "remotion still --frame=600 EndRound out/firstTournament.png",
+		"still:secondTournament": "remotion still --frame=800 EndRound out/secondTournament.png",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx && tsc"
 	},

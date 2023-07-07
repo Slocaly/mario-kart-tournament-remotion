@@ -3,12 +3,48 @@
 		"playerOne": {
 			"name": "Audrey",
 			"photo": "audrey.png",
+			"win": null
+		},
+		"playerTwo": {
+			"name": "Nirina",
+			"photo": "nirina.png",
+			"win": true
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Anthony",
+			"photo": "anthonyM.png",
 			"win": true
 		},
 		"playerTwo": {
-			"name": "Loïc",
-			"photo": "loic.png",
-			"win": false
+			"name": "Pierre",
+			"photo": "pierre.png",
+			"win": null
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Pops",
+			"photo": "etienne.png",
+			"win": true
+		},
+		"playerTwo": {
+			"name": "Jeremie",
+			"photo": "jeremie.png",
+			"win": null
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Emeric",
+			"photo": "emeric.png",
+			"win": true
+		},
+		"playerTwo": {
+			"name": "Mouss",
+			"photo": "mouss.png",
+			"win": null
 		}
 	},
 	{
@@ -18,57 +54,21 @@
 			"win": true
 		},
 		"playerTwo": {
-			"name": "Anthony",
-			"photo": "anthonyM.png",
-			"win": false
+			"name": "Mathilde",
+			"photo": "mathilde.png",
+			"win": null
 		}
 	},
 	{
 		"playerOne": {
-			"name": "Moustapha",
-			"photo": "mouss.png",
-			"win": false
-		},
-		"playerTwo": {
-			"name": "Thomas",
-			"photo": "thomas.png",
+			"name": "olivier",
+			"photo": "olivier.png",
 			"win": true
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Pierre",
-			"photo": "pierre.png",
-			"win": true
-		},
-		"playerTwo": {
-			"name": "Clémence",
-			"photo": "clemence.png",
-			"win": false
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Emeric",
-			"photo": "emeric.png",
-			"win": false
 		},
 		"playerTwo": {
 			"name": "Baptiste",
 			"photo": "baptiste.png",
-			"win": true
-		}
-	},
-	{
-		"playerOne": {
-			"name": "Pops",
-			"photo": "etienne.png",
-			"win": false
-		},
-		"playerTwo": {
-			"name": "Mickaël",
-			"photo": "micka.png",
-			"win": true
+			"win": null
 		}
 	}
 ]
