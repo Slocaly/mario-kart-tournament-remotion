@@ -1,0 +1,26 @@
+[
+	{
+		"playerOne": {
+			"name": "Mathieu",
+			"photo": "mathieu.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Thomas",
+			"photo": "thomas.png",
+			"lose": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Mickaël",
+			"photo": "micka.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Clémence",
+			"photo": "clemence.png",
+			"lose": false
+		}
+	}
+]

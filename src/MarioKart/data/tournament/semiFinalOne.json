@@ -1,0 +1,38 @@
+[
+	{
+		"playerOne": {
+			"name": "Nirina",
+			"photo": "nirina.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Anthony",
+			"photo": "anthonyM.png",
+			"lose": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Pops",
+			"photo": "etienne.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Emeric",
+			"photo": "emeric.png",
+			"lose": false
+		}
+	},
+	{
+		"playerOne": {
+			"name": "Lucas",
+			"photo": "lucas.png",
+			"lose": false
+		},
+		"playerTwo": {
+			"name": "Olivier",
+			"photo": "olivier.png",
+			"lose": false
+		}
+	}
+]

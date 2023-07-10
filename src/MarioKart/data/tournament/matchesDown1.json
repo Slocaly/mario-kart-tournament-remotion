@@ -39,12 +39,12 @@
 		"playerOne": {
 			"name": "Maria",
 			"photo": "maria.png",
-			"win": true
+			"win": false
 		},
 		"playerTwo": {
 			"name": "Geoffroy",
 			"photo": "geoffroy.png",
-			"win": false
+			"win": true
 		}
 	}
 ]

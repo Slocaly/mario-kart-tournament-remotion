@@ -38,7 +38,7 @@ export const Match: React.FC<MatchProps> = ({
 	const {playerOne, playerTwo} = players;
 
 	const springAnimIn = spring({
-		frame: frame - index * 3,
+		frame: frame,
 		fps,
 		from: -100,
 		to: 0,
@@ -49,7 +49,7 @@ export const Match: React.FC<MatchProps> = ({
 	});
 
 	const springAnimOut = spring({
-		frame: frame - index * 3 - 100,
+		frame: frame - 100,
 		fps,
 		from: 0,
 		to: 100,

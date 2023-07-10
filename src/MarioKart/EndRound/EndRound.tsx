@@ -1,9 +1,8 @@
 import {FC} from 'react';
 import {Sequence} from 'remotion';
-import {Rounds} from '../Rounds/Rounds';
-import {Ranking} from '../Ranking/Ranking';
 import {Tournament} from '../Tournament/Tournament';
 import {TournamentDown} from '../Tournament/TournamentDown';
+import {SemiFinal} from "../Tournament/SemiFinal";
 
 export const EndRound: FC = () => {
 	return (
@@ -23,6 +22,9 @@ export const EndRound: FC = () => {
 			<Sequence from={200} durationInFrames={200}>
 				<TournamentDown />
 			</Sequence>
+			<Sequence from={400} durationInFrames={130}>
+				<SemiFinal />
+			</Sequence>
 		</>
 	);
-};  
+};
